@@ -19,6 +19,7 @@ public static WebDriver driver;
 	public void doLogin(){
 		driver.get("http://way2automation.com/");
 		driver.findElement(By.xpath("//a[text()='MEMBER LOGIN']")).click();
+		//added comments
 	}
 	
 	 @AfterSuite
