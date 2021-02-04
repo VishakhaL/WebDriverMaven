@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
@@ -17,6 +18,7 @@ public static WebDriver driver;
 	@Test
 	public void doLogin(){
 		driver.get("http://way2automation.com/");
+		driver.findElement(By.xpath("//a[text()='MEMBER LOGIN']")).click();
 	}
 	
 	 @AfterSuite
